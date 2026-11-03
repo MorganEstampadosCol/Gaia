@@ -186,24 +186,175 @@ button,.nav a,.quick{-webkit-tap-highlight-color:transparent}
  .welcome-note{padding:13px}
 }
 @media(prefers-reduced-motion:reduce){.quick,.photo,.summary,.nav a,.page{transition:none!important;animation:none!important}}
+
+/* GAIA · Fancy playbook · edición rosa-vinotinto */
+:root{--ink:#401329;--wine:#641636;--wine-dark:#380c23;--rose:#dd6d9d;--blush:#ffe7f0;--cream:#fff7f4;--plum:#a04a8b;--peach:#ffc9b0}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(ellipse 700px 550px at 95% 0,#ffd7e7 0,transparent 75%),radial-gradient(ellipse 650px 650px at -10% 55%,#ffe2ed 0,transparent 78%),radial-gradient(ellipse 650px 550px at 105% 85%,#ffe9d0 0,transparent 73%),linear-gradient(145deg,#fff6fa,#fff9f7 52%,#faecf4);color:var(--ink);isolation:isolate}
+.watermark-paws{position:fixed;inset:0;overflow:hidden;z-index:-1;pointer-events:none;filter:grayscale(1) sepia(.8);opacity:.105}
+.watermark-paws span{position:absolute;display:block;line-height:1;animation:gaiaPawFloat 13s ease-in-out infinite alternate}
+.watermark-paws span:nth-child(1){font-size:120px;top:9%;left:-25px;transform:rotate(-25deg)}
+.watermark-paws span:nth-child(2){font-size:95px;top:22%;right:4%;animation-delay:-3s}
+.watermark-paws span:nth-child(3){font-size:135px;top:42%;left:6%;animation-delay:-5s}
+.watermark-paws span:nth-child(4){font-size:90px;top:64%;right:9%;animation-delay:-9s}
+.watermark-paws span:nth-child(5){font-size:150px;top:83%;left:-1%;animation-delay:-6s}
+.watermark-paws span:nth-child(6){font-size:75px;top:5%;right:27%;animation-delay:-11s}
+.watermark-paws span:nth-child(7){font-size:62px;top:75%;left:39%;animation-delay:-8s}
+.watermark-paws span:nth-child(8){font-size:108px;top:49%;right:32%;animation-delay:-1s}
+.floating-orbs{position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden}
+.floating-orbs i{position:absolute;border-radius:50%;filter:blur(38px);animation:gaiaOrb 15s ease-in-out infinite alternate}
+.floating-orbs i:nth-child(1){width:310px;height:310px;background:#f9c1d65f;top:3%;left:-9%}
+.floating-orbs i:nth-child(2){width:270px;height:270px;background:#edb8e15c;right:-9%;top:42%;animation-delay:-7s}
+.floating-orbs i:nth-child(3){width:230px;height:230px;background:#ffb38c4d;left:23%;bottom:-8%;animation-delay:-12s}
+@keyframes gaiaPawFloat{0%{translate:0 0;rotate:-5deg}100%{translate:12px -23px;rotate:7deg}}
+@keyframes gaiaOrb{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(27px,-36px,0) scale(1.18)}}
+@keyframes gaiaRise{from{opacity:0;transform:translateY(15px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes gaiaGlow{0%,100%{box-shadow:0 0 0 6px #fff6,0 18px 45px #34102564}50%{box-shadow:0 0 0 13px #fff4,0 24px 57px #34102572}}
+@keyframes gaiaHeartBeat{0%,75%,100%{transform:scale(1)}80%{transform:scale(1.18)}90%{transform:scale(.96)}}
+@keyframes gaiaShimmer{from{transform:translateX(-175%) skewX(-18deg)}to{transform:translateX(430%) skewX(-18deg)}}
+@keyframes gaiaSparkle{0%,100%{opacity:.45;transform:rotate(-12deg) scale(.92)}50%{opacity:1;transform:rotate(18deg) scale(1.22)}}
+@keyframes gaiaWiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(10deg)}}
+.wrap{position:relative;z-index:1}
+.top{margin-top:4px;padding:13px 10px 23px}
+.logo{font-size:34px;font-weight:800;letter-spacing:2px;filter:drop-shadow(0 3px 2px #b16c8a22)}
+.logo span{display:inline-block;animation:gaiaHeartBeat 4s infinite}
+.top-note{color:#8c4668;letter-spacing:1px;text-transform:uppercase;font-size:10px;font-weight:900}
+.hero{isolation:isolate;position:relative;background:radial-gradient(circle at 78% 5%,#f19dbb5e,transparent 36%),radial-gradient(circle at 8% 95%,#d2519f52,transparent 44%),linear-gradient(115deg,#460c2b,#7a204c 55%,#b84e81);border:1px solid #b96f92;border-radius:40px;overflow:hidden;box-shadow:0 23px 55px #5c15374a, inset 0 1px 0 #ffffff4d;padding:36px 39px}
+.hero:before{content:"✧   ✦   ✧";position:absolute;right:18%;top:10px;z-index:-1;font-size:62px;color:white;opacity:.12;letter-spacing:10px;transform:rotate(-14deg)}
+.hero:after{content:"🐾  ✧  ♡";position:absolute;bottom:6px;left:22px;opacity:.23;font-size:29px;color:#fff}
+.hero h1{font-size:clamp(46px,6vw,84px);font-weight:700;line-height:1.04;letter-spacing:-2.5px}
+.hero h1 em{font-style:italic;color:#ffcee4;text-shadow:0 2px 15px #f5a3c23a}
+.hero-heart{display:inline-block;color:#ffd2e2;animation:gaiaHeartBeat 3.6s infinite}
+.hero .eyebrow{background:#ffffff1a;border:1px solid #ffd9ed66;padding:8px 15px;letter-spacing:2px;border-radius:50px;box-shadow:inset 0 1px 0 #fff3}
+.hero p{font-size:15px;max-width:475px;line-height:1.8}
+.hero-image{position:relative;z-index:1;display:grid;place-items:center}
+.hero-photo-halo{position:absolute;width:266px;height:266px;border-radius:50%;background:conic-gradient(from 30deg,#ffd2e444,#fff9d25e,#ffa8ce80,#fff7e670,#ffd2e444);filter:blur(1px);animation:gaiaWiggle 7s ease-in-out infinite;z-index:-1}
+.hero-photo-sparkle{position:absolute;z-index:2;top:-6px;right:-5px;font-size:35px;color:#fff5cc;animation:gaiaSparkle 3s ease-in-out infinite;text-shadow:0 5px 13px #ff8cc9}
+.photo{width:228px;height:228px;border:8px solid #fff4f7;animation:gaiaGlow 5s ease-in-out infinite;transition:transform .24s}
+.photo:hover{transform:scale(1.045) rotate(2deg)}
+.hero-chips{margin-top:20px}
+.chip{background:#ffffff20;border:1px solid #ffffff55;padding:9px 15px;box-shadow:inset 0 1px 0 #fff4}
+.paws{font-size:16px;margin:21px 0 14px;opacity:.67;letter-spacing:16px}
+.nav{gap:9px}
+.nav a{border:1px solid #f0d3e1;background:#fff8fb;box-shadow:0 5px 13px #68244816;font-weight:900;transition:transform .2s,box-shadow .2s}
+.nav a:hover{transform:translateY(-2px);box-shadow:0 9px 17px #64233c28}
+.nav a.on{background:linear-gradient(120deg,#5f1437,#a94377);box-shadow:0 8px 18px #67274933}
+#inicio{isolation:isolate}
+.dashboard-heading{background:linear-gradient(120deg,#ffffffd9,#fff5fadb);padding:24px 29px;border:1px solid #f3dce7;border-radius:30px;box-shadow:0 16px 40px #6c254116;backdrop-filter:blur(9px);position:relative;overflow:hidden;margin:12px 0 24px;min-height:166px}
+.dashboard-heading:before{content:"✧";font-size:136px;font-family:Georgia,serif;position:absolute;right:111px;top:-54px;color:#e9b7cf;opacity:.36;pointer-events:none}
+.dashboard-heading .title{font-size:clamp(30px,4.3vw,45px);line-height:1.12;letter-spacing:-1.2px}
+.dashboard-heading .title em{font-style:italic;color:#a43d71}
+.wavy-heart{color:#e77cad;display:inline-block;animation:gaiaHeartBeat 4.8s infinite}
+.dashboard-heading .mini-label{font-weight:900;color:#a0537b}
+.dashboard-heading .lead{color:#8c6b7b}
+.dashboard-micro{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.dashboard-micro span{font-size:10px;border-radius:99px;padding:6px 11px;background:#fbe4ee;color:#9b4473;font-weight:800}
+.dashboard-avatar{z-index:1;width:110px;height:110px;box-shadow:0 0 0 7px #f6d8e5,0 15px 25px #742c4b38}
+.dashboard-avatar:after{animation:gaiaHeartBeat 3.4s infinite}
+.summary-grid{gap:15px;margin-bottom:31px}
+.summary{min-height:165px;border-radius:26px;padding:24px;overflow:hidden;position:relative;box-shadow:0 13px 26px #62233b1c;transition:transform .23s,box-shadow .23s}
+.summary:hover{transform:translateY(-5px);box-shadow:0 18px 33px #62233b33}
+.summary.rose{background:linear-gradient(125deg,#56102f,#963668);color:#fff}
+.summary.blush{background:linear-gradient(125deg,#f7cade,#ffe8f1)}
+.summary.cream{background:linear-gradient(125deg,#ffd9bd,#fff2e4)}
+.summary:after{content:"✿";font:700 90px Georgia,serif;right:-16px;top:-32px;opacity:.15;transform:rotate(18deg)}
+.summary strong{font-size:39px}
+.section-ribbon{display:flex;align-items:center;gap:12px;margin:16px 0 18px}
+.section-ribbon .dash-title{margin:5px 0 0;font-size:clamp(24px,3vw,32px)}
+.section-ribbon .dash-title span{font-size:20px;color:#d17fa9}
+.ribbon-kicker{font-size:9px;letter-spacing:2px;font-weight:900;color:#a3567b}
+.ribbon-line{flex:1;height:2px;background:linear-gradient(90deg,#d4a3ba,#f3dce9,transparent);border-radius:9px}
+.ribbon-paw{font-size:23px;transform:rotate(-22deg);animation:gaiaWiggle 4s infinite}
+.quick-grid{gap:17px}
+.quick{position:relative;overflow:hidden;isolation:isolate;min-height:203px;border-radius:29px;padding:22px 20px;box-shadow:0 14px 29px #60203921;transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s;will-change:transform}
+.quick:before{content:"";position:absolute;width:77px;height:190%;background:linear-gradient(90deg,transparent,#fff8,transparent);top:-35%;left:0;transform:translateX(-175%) skewX(-18deg);pointer-events:none}
+.quick:hover:before,.quick:focus-visible:before{animation:gaiaShimmer .8s ease forwards}
+.quick:after{content:"✦";position:absolute;top:-31px;right:-10px;width:auto;height:auto;background:transparent;border-radius:0;font-size:110px;opacity:.13;color:#fff;line-height:1.1}
+.quick:hover{transform:translateY(-7px) rotate(-1deg);box-shadow:0 22px 35px #70274433}
+.quick.vaccine{background:linear-gradient(145deg,#c9538d,#eaa7c8);color:#4d1636;border-color:#bb5e8e}
+.quick.history{background:linear-gradient(145deg,#b195d5,#e7d9f6);color:#46234d;border-color:#c5a9da}
+.quick.cycles{background:linear-gradient(145deg,#f4a98f,#ffdfbf);color:#652a35;border-color:#eca892}
+.quick.food{background:linear-gradient(145deg,#8ec6ae,#d7ead3);color:#234c3e;border-color:#a5cdb4}
+.quick-icon{border-radius:21px;background:#fff9;box-shadow:0 8px 15px #512b4a21;width:62px;height:62px;font-size:32px;transition:transform .22s}
+.quick:hover .quick-icon{transform:rotate(-9deg) scale(1.12)}
+.quick-label{font-size:19px;letter-spacing:-.3px;color:inherit;font-weight:900}
+.quick small{color:inherit;opacity:.79;font-weight:600;font-size:12px}
+.quick-arrow{background:#ffffffb0;width:37px;height:37px;font-size:24px;border-radius:15px;color:#632649}
+.recent-panel{position:relative;overflow:hidden;background:linear-gradient(125deg,#ffffffed,#fff2f7eb);border:1px solid #ebcddc;box-shadow:0 17px 37px #61233c1a}
+.recent-panel-decor{position:absolute;right:13px;top:-46px;font:700 170px Georgia,serif;color:#f3d4e3;pointer-events:none;opacity:.6}
+.recent-panel .recent-head{position:relative;z-index:1}
+.recent-entry{position:relative;z-index:1}
+.recent-entry .bubble{background:#f4cddd}
+.view-all,.track-backup{background:linear-gradient(110deg,#6c1d42,#ad4778);box-shadow:0 6px 17px #7b35523b}
+.welcome-note{border:1px solid #edc8dc;background:linear-gradient(112deg,#f9d6e4,#fff1e7);box-shadow:0 10px 25px #742c4414}
+.welcome-icon{display:grid;place-items:center;min-width:45px;height:45px;border-radius:15px;background:#fff9;animation:gaiaWiggle 4.6s infinite}
+.page>.title{color:#691c42}
+.page>.title:after{height:4px;background:linear-gradient(90deg,#d66c9b,#ecc1d5,transparent)}
+.sticker-card{background:linear-gradient(160deg,#fff,#fff7fb);box-shadow:0 14px 30px #6925411a}
+.sticker-card h3{background:#f4d4e3;box-shadow:inset 0 -2px 0 #e6b4cc}
+.stamp strong{background:linear-gradient(100deg,#651438,#ae4c7a)}
+.cycle-summary{box-shadow:0 13px 27px #5d173528}
+@media(max-width:760px){
+ .watermark-paws{opacity:.078}
+ .watermark-paws span:nth-child(3),.watermark-paws span:nth-child(7){display:none}
+ .top{padding:5px 5px 13px}
+ .logo{font-size:29px}
+ .top-note{font-size:9px}
+ .hero{padding:23px 17px;border-radius:29px}
+ .hero h1{font-size:clamp(45px,10vw,58px);letter-spacing:-2px}
+ .hero p{line-height:1.6}
+ .hero-photo-halo{width:185px;height:185px}
+ .hero-photo-sparkle{font-size:29px;right:7px}
+ .photo{width:166px;height:166px}
+ .dashboard-heading{padding:18px 17px;min-height:0;border-radius:23px;gap:9px}
+ .dashboard-heading .title{font-size:28px}
+ .dashboard-heading .lead{font-size:12px}
+ .dashboard-avatar{width:73px;height:73px;box-shadow:0 0 0 4px #f6d8e5,0 7px 18px #742c4b2a}
+ .dashboard-micro{gap:5px;margin-top:9px}
+ .dashboard-micro span{font-size:9px;padding:5px 8px}
+ .summary-grid{gap:8px;margin-bottom:25px}
+ .summary{padding:13px 10px;min-height:135px;border-radius:19px}
+ .summary strong{font-size:27px}
+ .section-ribbon{gap:9px}
+ .section-ribbon .dash-title{font-size:23px}
+ .ribbon-kicker{font-size:8px;letter-spacing:1.4px}
+ .quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px}
+ .quick{padding:15px 13px;border-radius:23px;min-height:180px}
+ .quick:after{font-size:70px;right:-3px;top:-15px}
+ .quick-icon{width:43px;height:43px;border-radius:14px;font-size:25px}
+ .quick-label{font-size:16px}
+ .quick small{font-size:11px;line-height:1.35}
+ .quick-arrow{width:27px;height:27px;right:10px;bottom:9px;border-radius:10px;font-size:17px}
+ .recent-panel{padding:17px}
+ .recent-panel-decor{font-size:110px;top:-31px}
+ .welcome-icon{min-width:37px;height:37px}
+ .nav{background:#fff8faed}
+}
+@media(prefers-reduced-motion:reduce){
+ .watermark-paws span,.floating-orbs i,.hero-heart,.wavy-heart,.dashboard-avatar:after,.photo,.hero-photo-sparkle,.ribbon-paw,.welcome-icon,.logo span{animation:none!important}
+ .quick,.quick-icon,.summary,.nav a,.photo{transition:none!important}
+ .quick:hover,.summary:hover,.nav a:hover{transform:none!important}
+}
 </style></head><body>
+<div class="watermark-paws" aria-hidden="true"><span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span></div>
+<div class="floating-orbs" aria-hidden="true"><i></i><i></i><i></i></div>
 <div class="wrap"><header class="top"><div class="logo">GAIA <span>♥ 🐾</span></div><div class="top-note">Mi historia, con amor</div></header>
-<section class="hero"><div><div class="eyebrow">Mi mundo de huellitas</div><h1>Hola, soy Gaia ♡</h1><p>Una vida llena de juegos, miradas curiosas y recuerdos. Mis cuidados, mi salud y todo lo que me hace única.</p><div class="hero-chips"><span class="chip">🐕 4 años</span><span class="chip">⚖ 18 kilos</span><span class="chip">💗 Hembra</span></div></div><div class="hero-image"><img class="photo" src="assets/gaia.jpg" alt="Gaia, perrita criolla de pelaje dorado y orejas levantadas"></div></section>
+<section class="hero"><div><div class="eyebrow">✧ Mi universo de huellitas ✧</div><h1>Hola, soy <em>Gaia</em> <span class="hero-heart">♡</span></h1><p>Una vida llena de juegos, miradas curiosas y recuerdos. Mis cuidados, mi salud y todo lo que me hace única.</p><div class="hero-chips"><span class="chip">🐕 4 años</span><span class="chip">⚖ 18 kilos</span><span class="chip">💗 Hembra</span></div></div><div class="hero-image"><span class="hero-photo-halo" aria-hidden="true"></span><span class="hero-photo-sparkle" aria-hidden="true">✦</span><img class="photo" src="assets/gaia.jpg" alt="Gaia, perrita criolla de pelaje dorado y orejas levantadas"></div></section>
 <div class="paws" aria-hidden="true">🐾 🐾 🐾 🐾</div>
 <nav class="nav" aria-label="Secciones de GAIA"><a href="#inicio" data-tab="inicio" class="on" aria-current="page">⌂ Inicio</a><a href="#perfil" data-tab="perfil">♡ Perfil</a><a href="#comida" data-tab="comida">🍖 Dieta</a><a href="#vacunas" data-tab="vacunas">✚ Vacunas</a><a href="#salud" data-tab="salud">🩺 Historial</a><a href="#seguimiento" data-tab="seguimiento">🩹 Molestias</a><a href="#laboratorios" data-tab="laboratorios">⌁ Exámenes</a><a href="#celo" data-tab="celo">🌷 Celos</a></nav>
 <main>
 <section class="page on" id="inicio">
-<div class="dashboard-heading"><div><p class="mini-label">HOGAR DE GAIA · MI PANEL</p><h2 class="title">Mi pequeño universo 🐾</h2><p class="lead">Todos mis cuidados y recuerdos, en un mismo lugar.</p></div><div class="dashboard-avatar"><img data-gaia-photo src="assets/gaia.jpg" alt="Gaia"></div></div>
+<div class="dashboard-heading"><div><p class="mini-label">✦ EL DIARIO DE UNA PRINCESA DE CUATRO PATAS ✦</p><h2 class="title">El rincón de <em>Gaia</em> <span class="wavy-heart">♥</span></h2><p class="lead">Sus recuerdos, sus aventuras y los cuidados que merece, todos aquí.</p><div class="dashboard-micro"><span>✧ Hecho con amor</span><span>🐾 Desde 2022</span></div></div><div class="dashboard-avatar"><img data-gaia-photo src="assets/gaia.jpg" alt="Gaia"></div></div>
 <div class="summary-grid"><div class="summary rose"><span>⚖ PESO ACTUAL</span><strong>18 <small>kg</small></strong><p>Actualizado en noviembre de 2026</p></div><div class="summary blush"><span>🎂 EDAD</span><strong>4 <small>años</small></strong><p>Desde agosto de 2022</p></div><div class="summary cream"><span>🍖 ALIMENTACIÓN</span><strong>Chunky</strong><p>Su alimento actual</p></div></div>
-<h3 class="dash-title">Mis cuidados</h3>
+<div class="section-ribbon"><div><span class="ribbon-kicker">DESCUBRE MI MUNDO</span><h3 class="dash-title">Mis cuidados <span aria-hidden="true">✿</span></h3></div><span class="ribbon-line" aria-hidden="true"></span><span class="ribbon-paw" aria-hidden="true">🐾</span></div>
 <div class="quick-grid">
 <a class="quick vaccine" href="#vacunas"><span class="quick-icon">💉</span><span class="quick-label">Vacunas</span><small>3 aplicaciones · 2022–2025</small><span class="quick-arrow">↗</span></a>
 <a class="quick history" href="#salud"><span class="quick-icon">🩺</span><span class="quick-label">Historial médico</span><small>Consultas, evolución y exámenes</small><span class="quick-arrow">↗</span></a>
 <a class="quick cycles" href="#celo"><span class="quick-icon">🌷</span><span class="quick-label">Celos</span><small>Calendario y seguimiento</small><span class="quick-arrow">↗</span></a>
 <a class="quick food" href="#comida"><span class="quick-icon">🦴</span><span class="quick-label">Alimentación</span><small>Chunky · historial Monello</small><span class="quick-arrow">↗</span></a>
 </div>
-<div class="recent-panel"><div class="recent-head"><div><p class="mini-label">BIENESTAR DE GAIA</p><h3 class="dash-title">Molestias y seguimiento</h3></div><button data-go="seguimiento" class="view-all">Ver seguimiento ↗</button></div><div id="recentSymptoms"></div></div>
-<div class="welcome-note"><span>🐾</span><p>Una historia que crece con cada huellita. En la sección de seguimiento puedes guardar nuevos episodios y registrar cómo evoluciona Gaia.</p></div>
+<div class="recent-panel"><div class="recent-panel-decor" aria-hidden="true">♡</div><div class="recent-head"><div><p class="mini-label">BIENESTAR DE GAIA</p><h3 class="dash-title">Molestias y seguimiento</h3></div><button data-go="seguimiento" class="view-all">Ver seguimiento ↗</button></div><div id="recentSymptoms"></div></div>
+<div class="welcome-note"><span class="welcome-icon">🐾</span><p>Una historia que crece con cada huellita. En la sección de seguimiento puedes guardar nuevos episodios y registrar cómo evoluciona Gaia.</p></div>
 </section>
 <section class="page" id="perfil"><h2 class="title">♡ Mi ficha personal</h2><div class="cards"><div class="card wide"><div class="rowdata"><span>Nombre</span><strong>Gaia</strong></div><div class="rowdata"><span>Especie</span><strong>Canino</strong></div><div class="rowdata"><span>Raza</span><strong>Criolla mestiza, mediana de pelo largo</strong></div><div class="rowdata"><span>Sexo</span><strong>Hembra</strong></div><div class="rowdata"><span>Pelaje</span><strong>Negro y amarillo</strong></div><div class="rowdata"><span>Nacimiento</span><strong>Agosto de 2022</strong></div><div class="rowdata"><span>Edad actual</span><strong>4 años</strong></div><div class="rowdata"><span>Esterilización</span><strong>No esterilizada</strong></div><div class="rowdata"><span>Peso actual</span><strong>18 kg</strong></div></div><div class="card pink"><img src="assets/gaia.jpg" alt="Foto de Gaia" style="width:100%;border-radius:17px;aspect-ratio:1;object-fit:cover"><p>Mi sonrisa y mis orejitas favoritas ♡</p></div></div></section>
 <section class="page" id="comida"><h2 class="title">🍖 Mi alimentación</h2><div class="cards"><div class="card pink"><small>ALIMENTO ACTUAL</small><div class="metric">Chunky</div><p>Mi alimento habitual en la actualidad.</p></div><div class="card peach"><small>ALIMENTO ANTERIOR</small><div class="metric">Monello</div><p>Lo consumí hasta 2023.</p></div><div class="card light"><small>PESO ACTUAL</small><div class="metric">18 kg</div><p>Referencia para mi seguimiento nutricional.</p></div></div></section>
