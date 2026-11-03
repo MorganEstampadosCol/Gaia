@@ -48,9 +48,22 @@
     {
       "id": "vac-2025-1",
       "date": "2025-03-11",
-      "name": "Vibix C6R L4R/R",
+      "name": "Vibix C6R (L4R + R)",
       "lot": "755631",
-      "lot_expiry": "2026-03"
+      "lot_expiry": "2026-03",
+      "lots": [
+        {
+          "label": "Vibix C6R L4R",
+          "lot": "755631",
+          "expiry": "2026-03"
+        },
+        {
+          "label": "Vibix C6R R",
+          "lot": "755631",
+          "expiry": "2026-03"
+        }
+      ],
+      "stickers_count": 2
     }
   ],
   "weight_history": [
