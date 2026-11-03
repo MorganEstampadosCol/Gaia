@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-02",
+  "profile": {
+    "name": "Gaia",
+    "species": "Canino",
+    "breed": "Criolla mestiza, mediana de pelo largo",
+    "sex": "Hembra",
+    "birth": "2022-08",
+    "sterilized": false,
+    "current_weight_kg": 18,
+    "color": "Negro y amarillo"
+  },
+  "feeding": {
+    "current": "Chunky",
+    "previous": [
+      {
+        "name": "Monello",
+        "until": "2023"
+      }
+    ]
+  },
+  "vaccines": [
+    {
+      "id": "vac-2022-1",
+      "date": "2022-11-13",
+      "name": "Nobivac Puppy DP",
+      "lot": "A189D01",
+      "lot_expiry": "2023-12"
+    },
+    {
+      "id": "vac-2022-2",
+      "date": "2022-12-23",
+      "name": "Nobivac Lepto + DHPPi",
+      "lots": [
+        {
+          "name": "Nobivac Lepto",
+          "lot": "A457A01",
+          "expiry": "2023-01"
+        },
+        {
+          "name": "Nobivac DHPPi",
+          "lot": "0129033A01",
+          "expiry": "2024-04"
+        }
+      ]
+    },
+    {
+      "id": "vac-2025-1",
+      "date": "2025-03-11",
+      "name": "Vibix C6R L4R/R",
+      "lot": "755631",
+      "lot_expiry": "2026-03"
+    }
+  ],
+  "weight_history": [
+    {
+      "date": "2023-03-25",
+      "value_kg": 14
+    },
+    {
+      "date": "2026-11-02",
+      "value_kg": 18
+    }
+  ],
+  "medical_history": [
+    {
+      "date": "2023-03-25",
+      "title": "Consulta y análisis clínicos",
+      "clinic": "Dogtor Pets",
+      "clinical_record": "4177",
+      "notes": "Hemograma, bioquímica clínica y fórmula médica; interpretación transcrita del informe: anemia hipercrómica normocítica e hipoproteinemia. Ver tablas en la aplicación."
+    },
+    {
+      "date": "2023",
+      "title": "Antecedente ocular derecho",
+      "notes": "Lesión leve jugando y episodios de protrusión del tercer párpado que se reduce espontáneamente, descritos como ojo de cereza. Sin tratamiento documentado."
+    }
+  ],
+  "symptoms": [],
+  "cycles": []
+}
