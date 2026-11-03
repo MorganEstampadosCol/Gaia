@@ -139,7 +139,7 @@ finally{syncing=false;submitButton.disabled=false;}
 return false;
 }
 function renderSymptoms(){
-const ordered=[...symptoms].sort((a,b)=>String(b.fecha||'').localeCompare(String(a.fecha||''));
+const ordered=[...symptoms].sort((a,b)=>String(b.fecha||'').localeCompare(String(a.fecha||'')));
 const list=document.getElementById('allSymptoms'),recent=document.getElementById('recentSymptoms');
 if(!ordered.length){list.innerHTML='<div class="empty">Sin molestias nuevas documentadas.</div>';recent.innerHTML='<div class="recent-entry"><span class="bubble">👁️</span><div><strong>Antecedente ocular</strong><small>Ojo derecho · 2023</small></div><span class="status">Histórico</span></div>';return}
 list.innerHTML=ordered.map(x=>'<article class="track-item"><div class="track-item-head"><div><h3>'+safe(x.titulo)+'</h3><small>'+safe(x.fecha)+'</small> · <span class="track-status">'+safe(x.estado)+'</span></div><button type="button" class="track-delete" data-delete-symptom="'+safe(x.id)+'">Eliminar</button></div><p>'+safe(x.detalle||'Sin descripción adicional')+'</p></article>').join('');
