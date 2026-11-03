@@ -63,7 +63,130 @@ body.section-open .page.on{padding-top:9px}
  .github-sync{flex-wrap:wrap}
  .clinical iframe{min-height:1350px}
 }
-.cycle-overview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:16px 0}.cycle-summary{background:linear-gradient(135deg,#782345,#b4527e);color:#fff;border-radius:22px;padding:19px;display:flex;flex-direction:column;gap:8px}.cycle-summary.pale{background:#f7e0ea;color:#712b4b}.cycle-summary>span{font-size:11px;font-weight:800;letter-spacing:.5px}.cycle-summary>strong{font:700 25px Fraunces,Georgia,serif}.cycle-summary>small{font-size:12px;line-height:1.45;opacity:.86}.cycle-month-notice{font-size:13px;font-weight:750;background:#f7eff3;color:#8c7080;padding:11px 14px;border-radius:12px;margin-bottom:15px}.cycle-month-notice.observed{background:#f6dce7;color:#8d2c58}.cycle-month-notice.tentative{background:#fff0db;color:#97621e}.cycle-history{display:grid;gap:4px}.cycle-row{display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid #f0e1e7}.cycle-row:last-child{border-bottom:0}.cycle-icon{width:43px;height:43px;display:grid;place-items:center;background:#f8e4ee;border-radius:15px;flex:none;font-size:20px}.cycle-row>div:nth-child(2){flex:1;min-width:0}.cycle-row strong{color:#6e2443}.cycle-row p{font-size:12px;color:#866b78;line-height:1.5;margin:4px 0 0}.cycle-chip{border-radius:99px;padding:6px 9px;font-size:10px;font-weight:800;background:#f6dfeb;color:#803a5e;white-space:nowrap}.cycle-chip.maybe{background:#fff0d8;color:#986a26}.cycle-note{font-size:12px;line-height:1.6;color:#927988;margin:15px 0 0}@media(max-width:760px){.cycle-overview{gap:9px}.cycle-summary{padding:14px 12px}.cycle-summary>strong{font-size:19px}.cycle-summary>small{font-size:11px}.cycle-row{gap:9px}.cycle-chip{font-size:9px;padding:6px 7px}}.cycle-prediction{display:flex;align-items:center;gap:14px;margin:0 0 16px;border-radius:23px;background:linear-gradient(115deg,#741a41,#b65b81);color:white;padding:18px;box-shadow:0 12px 25px #7a214525}.cycle-prediction-icon{font-size:29px;display:grid;place-items:center;min-width:47px;height:47px;background:#ffffff20;border-radius:15px}.cycle-prediction span{display:block;font-size:10px;font-weight:800;letter-spacing:1px;color:#ffe0ed}.cycle-prediction strong{font:700 24px Fraunces,Georgia,serif;display:block;margin:5px 0}.cycle-prediction small{display:block;font-size:11px;line-height:1.5;color:#ffecf1}@media(max-width:760px){.cycle-prediction{padding:14px;gap:10px}.cycle-prediction strong{font-size:19px}}</style></head><body>
+.cycle-overview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:16px 0}.cycle-summary{background:linear-gradient(135deg,#782345,#b4527e);color:#fff;border-radius:22px;padding:19px;display:flex;flex-direction:column;gap:8px}.cycle-summary.pale{background:#f7e0ea;color:#712b4b}.cycle-summary>span{font-size:11px;font-weight:800;letter-spacing:.5px}.cycle-summary>strong{font:700 25px Fraunces,Georgia,serif}.cycle-summary>small{font-size:12px;line-height:1.45;opacity:.86}.cycle-month-notice{font-size:13px;font-weight:750;background:#f7eff3;color:#8c7080;padding:11px 14px;border-radius:12px;margin-bottom:15px}.cycle-month-notice.observed{background:#f6dce7;color:#8d2c58}.cycle-month-notice.tentative{background:#fff0db;color:#97621e}.cycle-history{display:grid;gap:4px}.cycle-row{display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid #f0e1e7}.cycle-row:last-child{border-bottom:0}.cycle-icon{width:43px;height:43px;display:grid;place-items:center;background:#f8e4ee;border-radius:15px;flex:none;font-size:20px}.cycle-row>div:nth-child(2){flex:1;min-width:0}.cycle-row strong{color:#6e2443}.cycle-row p{font-size:12px;color:#866b78;line-height:1.5;margin:4px 0 0}.cycle-chip{border-radius:99px;padding:6px 9px;font-size:10px;font-weight:800;background:#f6dfeb;color:#803a5e;white-space:nowrap}.cycle-chip.maybe{background:#fff0d8;color:#986a26}.cycle-note{font-size:12px;line-height:1.6;color:#927988;margin:15px 0 0}@media(max-width:760px){.cycle-overview{gap:9px}.cycle-summary{padding:14px 12px}.cycle-summary>strong{font-size:19px}.cycle-summary>small{font-size:11px}.cycle-row{gap:9px}.cycle-chip{font-size:9px;padding:6px 7px}}.cycle-prediction{display:flex;align-items:center;gap:14px;margin:0 0 16px;border-radius:23px;background:linear-gradient(115deg,#741a41,#b65b81);color:white;padding:18px;box-shadow:0 12px 25px #7a214525}.cycle-prediction-icon{font-size:29px;display:grid;place-items:center;min-width:47px;height:47px;background:#ffffff20;border-radius:15px}.cycle-prediction span{display:block;font-size:10px;font-weight:800;letter-spacing:1px;color:#ffe0ed}.cycle-prediction strong{font:700 24px Fraunces,Georgia,serif;display:block;margin:5px 0}.cycle-prediction small{display:block;font-size:11px;line-height:1.5;color:#ffecf1}@media(max-width:760px){.cycle-prediction{padding:14px;gap:10px}.cycle-prediction strong{font-size:19px}}
+/* GAIA | Cuaderno de huellitas - identidad visual 2026 */
+:root{--wine:#702041;--wine-dark:#48142d;--rose:#b94e7b;--pink:#f6dce8;--cream:#fff8f4;--ink:#44223a;--muted:#866b79;--line:#edd5df;--shadow:0 14px 40px rgba(85,24,51,.10)}
+html{scroll-padding-top:100px}
+body{background:
+ radial-gradient(ellipse 420px 420px at 97% 2%,#f5d4e4 0,transparent 84%),
+ radial-gradient(ellipse 540px 450px at 0 60%,#ffe8d9 0,transparent 82%),
+ linear-gradient(155deg,#fff9f8,#fff7fb 55%,#fffbf6);
+ color:var(--ink)}
+.wrap{position:relative}
+.top{padding:14px 6px 22px}
+.logo{font-size:31px;letter-spacing:2px;text-shadow:0 4px 14px #9f42701a}
+.logo span{font-size:20px}
+.top-note{letter-spacing:.6px;font-weight:800;color:#975979}
+.hero{isolation:isolate;min-height:285px;border:1px solid #9e5172;background:
+ radial-gradient(circle at 12% 25%,#ffffff12 0 4px,transparent 5px),
+ linear-gradient(117deg,#4a0d2a 0%,#792342 54%,#c76e98 100%);
+ border-radius:35px;box-shadow:0 20px 48px #62233e2e;overflow:hidden}
+.hero:before{content:"✦";position:absolute;z-index:-1;right:29%;top:20px;font-size:110px;color:#ffe2ed;opacity:.11;transform:rotate(-17deg)}
+.hero:after{content:"🐾  ♡  🐾";position:absolute;z-index:-1;left:27px;bottom:10px;font-size:16px;letter-spacing:8px;color:white;opacity:.24}
+.hero h1{letter-spacing:-2px;line-height:1.04;text-shadow:0 5px 18px #420f2952}
+.hero .eyebrow{display:inline-block;font-weight:900;letter-spacing:2.1px;color:#ffdae9;padding:6px 13px;border:1px solid #ffd8e54f;border-radius:99px;background:#ffffff16}
+.hero p{font-size:15px;line-height:1.75}
+.photo{width:235px;height:235px;border:8px solid #fff6f7;object-position:center;box-shadow:0 0 0 6px #ffffff27,0 20px 36px #380b2970;transition:transform .3s ease}
+.photo:hover{transform:rotate(3deg) scale(1.025)}
+.chip{border-radius:99px;background:#ffffff1a;box-shadow:inset 0 1px 0 #ffffff38;backdrop-filter:blur(3px);font-size:12px}
+.paws{opacity:.7;letter-spacing:13px;margin:18px 0 9px}
+.nav{gap:8px;padding:13px 2px 21px}
+.nav a{border:1px solid #ecd0dc;background:#fff8fa;color:#7b3b5c;box-shadow:0 3px 10px #7a254014;transition:transform .18s ease,background .18s ease,box-shadow .18s ease}
+.nav a:hover{transform:translateY(-2px);background:#fbe6ef}
+.nav a.on{border-color:#7b2446;background:linear-gradient(120deg,#641739,#a34069);box-shadow:0 7px 17px #852b5633}
+.page{min-height:40vh}
+.page>.title{font-size:clamp(28px,3.5vw,38px);letter-spacing:-.8px;margin:12px 0 22px;position:relative;display:inline-block}
+.page>.title:after{content:"";display:block;margin-top:9px;width:68%;height:5px;border-radius:99px;background:linear-gradient(90deg,#aa4c77,#efbdcf,transparent)}
+.page>.lead{line-height:1.7;margin-top:-7px;margin-bottom:21px}
+.dashboard-heading{margin:12px 0 24px;position:relative}
+.dashboard-heading .title{font-size:clamp(29px,4.2vw,44px);margin:6px 0 9px;letter-spacing:-1px}
+.mini-label{font-size:10px;letter-spacing:2px;color:#9e4e74}
+.dashboard-avatar{width:93px;height:93px;border-radius:50%;border:3px solid white;box-shadow:0 8px 25px #842c562e;position:relative}
+.dashboard-avatar:after{content:"♥";display:grid;place-items:center;position:absolute;bottom:-3px;right:-4px;background:#982f5e;color:white;width:28px;height:28px;border-radius:50%;border:3px solid #fff;font-size:13px}
+.summary-grid{gap:14px;margin-bottom:32px}
+.summary{min-height:153px;padding:23px;border:1px solid #f5dbe5;transition:transform .2s ease,box-shadow .2s ease;position:relative;overflow:hidden;border-radius:25px}
+.summary:after{content:"✧";position:absolute;right:12px;top:7px;font:700 49px Georgia,serif;opacity:.13}
+.summary:hover{transform:translateY(-3px);box-shadow:0 16px 36px #77254a27}
+.summary.rose{border-color:#7a2f52;background:linear-gradient(133deg,#5d1636,#9e3b68);box-shadow:0 14px 33px #74244427}
+.summary.blush{background:linear-gradient(133deg,#f3cee0,#fff1f5)}
+.summary.cream{background:linear-gradient(133deg,#ffe7d5,#fff9eb)}
+.summary strong{letter-spacing:-1.2px}
+.dash-title{font-size:clamp(23px,3vw,30px);letter-spacing:-.5px}
+.quick-grid{gap:15px}
+.quick{border-radius:25px;border:1px solid #edd8e0;box-shadow:0 10px 27px #5d193b13;min-height:189px;padding:21px;overflow:hidden;isolation:isolate;position:relative;transition:transform .22s ease,box-shadow .22s ease;display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:#4b2140}
+.quick:after{content:"";position:absolute;z-index:-1;width:105px;height:105px;border-radius:50%;background:#ffffff5c;right:-30px;top:-39px}
+.quick:hover{transform:translateY(-5px) rotate(-.35deg);box-shadow:0 15px 35px #68213f25}
+.quick.vaccine{background:linear-gradient(155deg,#f3c8de,#fdeff5)}
+.quick.history{background:linear-gradient(155deg,#e6d7f0,#f7f0fa)}
+.quick.cycles{background:linear-gradient(155deg,#ffe0cb,#fff5e8)}
+.quick.food{background:linear-gradient(155deg,#dcebdc,#f5f8eb)}
+.quick-icon{width:53px;height:53px;display:grid;place-items:center;background:#ffffff9c;border-radius:17px;font-size:29px;box-shadow:0 4px 13px #4c183414;line-height:1}
+.quick-label{margin-top:8px;letter-spacing:-.35px}
+.quick small{line-height:1.5;color:#715669}
+.quick-arrow{font-size:20px;position:absolute;right:18px;bottom:18px;top:auto;width:31px;height:31px;display:grid;place-items:center;background:#fff9;border-radius:50%}
+.card,.sticker-card,.recent-panel{background:#fffefe;border:1px solid #f0d9e3;box-shadow:0 12px 35px #5d1a3811;border-radius:25px}
+.card{padding:24px}
+.card h2:not(.title),.card h3{color:#682c4d}
+.card.pink{background:linear-gradient(153deg,#fbe5ef,#fff6fa)}
+.card.peach,.card.gold{background:linear-gradient(150deg,#ffebda,#fff7ed)}
+.card.light{background:linear-gradient(150deg,#f4e6f1,#fff8fc)}
+.card.wide{position:relative}
+.rowdata{gap:14px;padding:15px 1px}
+.rowdata strong{color:#6c2548}
+.stickers{gap:17px}
+.sticker-card{padding:20px}
+.sticker-card .label{color:#9a4972;letter-spacing:2.5px}
+.sticker-card h3{display:inline-block;background:#f7dce8;border-radius:11px;padding:6px 15px;font-size:25px;margin:11px 0 3px}
+.stamp{border-radius:14px;box-shadow:0 4px 14px #68253e0c;overflow:hidden}
+.stamp strong{background:linear-gradient(92deg,#771e47,#ba5d8b);font-weight:900;letter-spacing:.15px}
+.stamp.gold strong{background:linear-gradient(90deg,#94476b,#d48bad)}
+.stamp.blue strong{background:linear-gradient(90deg,#a54d77,#d18bae)}
+.stamp .details{font-size:13px;line-height:1.85}
+.recent-panel{padding:24px;margin-top:27px;background:linear-gradient(150deg,#fffdfa,#fff5f9)}
+.recent-panel .recent-head{margin-bottom:8px}
+.recent-entry .bubble{background:#f6d9e6;border-radius:15px}
+.welcome-note{background:linear-gradient(100deg,#f5d9e7,#fff0ed);border:1px solid #f2dae0;box-shadow:0 5px 18px #812f4a0c}
+.view-all,.track-backup,.github-sync button{box-shadow:0 5px 14px #76244627}
+.page .cycle-overview,.page .cycle-prediction{margin-top:18px}
+.cycle-summary,.cycle-prediction{box-shadow:0 11px 30px #62223b1a}
+.cycle-row{transition:background .15s ease;border-radius:13px;padding-left:8px;padding-right:8px}
+.cycle-row:hover{background:#fcf3f6}
+.calday{border:1px solid #f2dfe8;border-radius:11px}
+button,.nav a,.quick{-webkit-tap-highlight-color:transparent}
+@media(max-width:760px){
+ .wrap{padding:12px 13px 24px}
+ .top{padding:5px 3px 13px}
+ .logo{font-size:26px}
+ .hero{min-height:0;gap:13px;padding:24px 17px;border-radius:28px}
+ .hero h1{font-size:clamp(46px,11vw,59px)}
+ .hero p{font-size:13px;line-height:1.6}
+ .photo{width:163px;height:163px;border-width:6px}
+ .nav{gap:8px;padding:11px 10px calc(12px + env(safe-area-inset-bottom))}
+ .nav a{padding:10px 14px;box-shadow:none;border:1px solid #efd8e3}
+ .nav a.on{box-shadow:0 6px 15px #76284b33}
+ .page>.title{font-size:29px;margin:7px 0 20px}
+ .dashboard-heading{margin:7px 0 19px}
+ .dashboard-heading .title{font-size:30px}
+ .dashboard-avatar{width:73px;height:73px}
+ .summary-grid{gap:8px;margin-bottom:23px}
+ .summary{min-height:130px;padding:13px 10px;border-radius:18px}
+ .summary strong{font-size:27px}
+ .summary strong small{font-size:13px}
+ .summary span{font-size:9px;letter-spacing:.2px}
+ .summary p{font-size:10px}
+ .quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:11px}
+ .quick{min-height:166px;padding:14px 13px;border-radius:21px}
+ .quick-icon{width:41px;height:41px;font-size:24px;border-radius:13px}
+ .quick-label{font-size:15px}
+ .quick small{font-size:11px}
+ .quick-arrow{width:25px;height:25px;right:10px;bottom:10px;font-size:17px}
+ .card{padding:18px}
+ .recent-panel{padding:18px;margin-top:20px}
+ .sticker-card{padding:18px}
+ .welcome-note{padding:13px}
+}
+@media(prefers-reduced-motion:reduce){.quick,.photo,.summary,.nav a,.page{transition:none!important;animation:none!important}}
+</style></head><body>
 <div class="wrap"><header class="top"><div class="logo">GAIA <span>♥ 🐾</span></div><div class="top-note">Mi historia, con amor</div></header>
 <section class="hero"><div><div class="eyebrow">Mi mundo de huellitas</div><h1>Hola, soy Gaia ♡</h1><p>Una vida llena de juegos, miradas curiosas y recuerdos. Mis cuidados, mi salud y todo lo que me hace única.</p><div class="hero-chips"><span class="chip">🐕 4 años</span><span class="chip">⚖ 18 kilos</span><span class="chip">💗 Hembra</span></div></div><div class="hero-image"><img class="photo" src="assets/gaia.jpg" alt="Gaia, perrita criolla de pelaje dorado y orejas levantadas"></div></section>
 <div class="paws" aria-hidden="true">🐾 🐾 🐾 🐾</div>
