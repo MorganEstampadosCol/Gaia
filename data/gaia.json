@@ -101,5 +101,42 @@
       "historico": true
     }
   ],
-  "cycles": []
+  "cycles": [
+    {
+      "id": "celo-2024-06",
+      "month": "2024-06",
+      "precision": "mes",
+      "certainty": "reportado",
+      "note": "Celo observado en junio de 2024; sin día exacto."
+    },
+    {
+      "id": "celo-2024-10",
+      "month": "2024-10",
+      "precision": "mes",
+      "certainty": "reportado",
+      "note": "Celo observado en octubre de 2024; sin día exacto."
+    },
+    {
+      "id": "celo-2025-04",
+      "month": "2025-04",
+      "precision": "mes",
+      "certainty": "aproximado",
+      "note": "Posible celo en abril de 2025, según recuerdo del cuidador; pendiente de confirmar."
+    },
+    {
+      "id": "celo-2026-03",
+      "month": "2026-03",
+      "precision": "mes",
+      "certainty": "reportado",
+      "phase": "ultima_semana",
+      "note": "En marzo de 2026 estaba en la última semana del celo. No se conoce el día de inicio."
+    },
+    {
+      "id": "celo-2026-09",
+      "month": "2026-09",
+      "precision": "mes",
+      "certainty": "reportado",
+      "note": "Celo observado en septiembre de 2026; sin día exacto."
+    }
+  ]
 }
