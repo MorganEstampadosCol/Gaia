@@ -63,7 +63,7 @@ body.section-open .page.on{padding-top:9px}
  .github-sync{flex-wrap:wrap}
  .clinical iframe{min-height:1350px}
 }
-</style></head><body>
+.cycle-overview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:16px 0}.cycle-summary{background:linear-gradient(135deg,#782345,#b4527e);color:#fff;border-radius:22px;padding:19px;display:flex;flex-direction:column;gap:8px}.cycle-summary.pale{background:#f7e0ea;color:#712b4b}.cycle-summary>span{font-size:11px;font-weight:800;letter-spacing:.5px}.cycle-summary>strong{font:700 25px Fraunces,Georgia,serif}.cycle-summary>small{font-size:12px;line-height:1.45;opacity:.86}.cycle-month-notice{font-size:13px;font-weight:750;background:#f7eff3;color:#8c7080;padding:11px 14px;border-radius:12px;margin-bottom:15px}.cycle-month-notice.observed{background:#f6dce7;color:#8d2c58}.cycle-month-notice.tentative{background:#fff0db;color:#97621e}.cycle-history{display:grid;gap:4px}.cycle-row{display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid #f0e1e7}.cycle-row:last-child{border-bottom:0}.cycle-icon{width:43px;height:43px;display:grid;place-items:center;background:#f8e4ee;border-radius:15px;flex:none;font-size:20px}.cycle-row>div:nth-child(2){flex:1;min-width:0}.cycle-row strong{color:#6e2443}.cycle-row p{font-size:12px;color:#866b78;line-height:1.5;margin:4px 0 0}.cycle-chip{border-radius:99px;padding:6px 9px;font-size:10px;font-weight:800;background:#f6dfeb;color:#803a5e;white-space:nowrap}.cycle-chip.maybe{background:#fff0d8;color:#986a26}.cycle-note{font-size:12px;line-height:1.6;color:#927988;margin:15px 0 0}@media(max-width:760px){.cycle-overview{gap:9px}.cycle-summary{padding:14px 12px}.cycle-summary>strong{font-size:19px}.cycle-summary>small{font-size:11px}.cycle-row{gap:9px}.cycle-chip{font-size:9px;padding:6px 7px}}</style></head><body>
 <div class="wrap"><header class="top"><div class="logo">GAIA <span>♥ 🐾</span></div><div class="top-note">Mi historia, con amor</div></header>
 <section class="hero"><div><div class="eyebrow">Mi mundo de huellitas</div><h1>Hola, soy Gaia ♡</h1><p>Una vida llena de juegos, miradas curiosas y recuerdos. Mis cuidados, mi salud y todo lo que me hace única.</p><div class="hero-chips"><span class="chip">🐕 4 años</span><span class="chip">⚖ 18 kilos</span><span class="chip">💗 Hembra</span></div></div><div class="hero-image"><img class="photo" src="assets/gaia.jpg" alt="Gaia, perrita criolla de pelaje dorado y orejas levantadas"></div></section>
 <div class="paws" aria-hidden="true">🐾 🐾 🐾 🐾</div>
@@ -101,7 +101,7 @@ body.section-open .page.on{padding-top:9px}
 <div class="card" style="margin-top:17px"><div class="recent-head"><h3 class="dash-title">Historial de observaciones</h3><button id="saveSymptoms" class="track-backup">↓ Respaldo</button></div><div id="allSymptoms" class="track-list"></div><p class="small-print">Los registros compartidos se consultan desde GitHub. Necesitas conexión y autorización para guardar o eliminar. No cierres la página antes de que aparezca la confirmación de guardado. El contenido del repositorio público es visible para otras personas.</p></div>
 </section>
 <section class="page" id="laboratorios"><h2 class="title">⌁ Laboratorios y tratamiento · 2023</h2><div class="card"><p>Hemograma completo, bioquímica, interpretación original y prescripción del 25 de marzo de 2023. Historia clínica 4177.</p></div><div class="clinical"><iframe id="clinicalFrame" title="Expediente clínico completo de Gaia" loading="lazy" src="app.html"></iframe></div></section>
-<section class="page" id="celo"><h2 class="title">🌷 Mi calendario de celos</h2><div class="card"><div class="calcontrols"><button id="prev">‹</button><strong id="calTitle">Noviembre de 2026</strong><button id="next">›</button></div><div class="calendar-grid" id="cal"></div><div class="empty">Calendario de seguimiento del ciclo reproductivo de Gaia.</div></div></section>
+<section class="page" id="celo"><h2 class="title">🌷 Mis ciclos de celo</h2><p class="lead">Un diario cuidadoso de los meses que recuerdas, sin inventar días de inicio o finalización.</p><div class="cycle-overview"><div class="cycle-summary"><span>🌸 Último celo registrado</span><strong>Septiembre 2026</strong><small>Mes reportado, fechas exactas desconocidas</small></div><div class="cycle-summary pale"><span>🐾 Registros</span><strong>5 antecedentes</strong><small>Uno aproximado: abril de 2025</small></div></div><div class="card"><div class="calcontrols"><button type="button" id="prev" aria-label="Mes anterior">‹</button><strong id="calTitle">Noviembre de 2026</strong><button type="button" id="next" aria-label="Mes siguiente">›</button></div><div id="cycleMonthNotice" class="cycle-month-notice" aria-live="polite"></div><div class="calendar-grid" id="cal"></div><p class="cycle-note">Los meses coloreados son referencias del calendario, no fechas exactas del ciclo. No se atribuye una etapa concreta a los días mostrados.</p></div><div class="card" style="margin-top:16px"><div class="recent-head"><h3 class="dash-title">🌼 Historial de celos</h3><span class="pill">Registros de Gaia</span></div><div id="cycleHistory" class="cycle-history"></div><p class="cycle-note">El intervalo entre celos puede variar y pueden faltar registros. No se recomienda predecir fertilidad o días seguros usando únicamente estos meses.</p></div></section>
 </main><footer class="foot">GAIA ♡ Cada huellita cuenta 🐾</footer></div>
 <script>
 document.querySelectorAll('img[src="assets/gaia.jpg"]').forEach(img=>{img.onerror=()=>{img.alt='Foto de Gaia no disponible';};});
@@ -125,9 +125,38 @@ document.addEventListener('click',e=>{const link=e.target.closest('[data-tab],[d
 window.addEventListener('hashchange',()=>showTab(location.hash.slice(1)||'inicio',{hash:false}));
 showTab(location.hash.slice(1)||'inicio',{hash:false,scroll:false});
 function setupClinical(){const frame=document.getElementById('clinicalFrame');const run=()=>{try{const d=frame.contentDocument;if(!d)return;const s=d.createElement('style');s.textContent='header.top,.hero,.nav,.footer,.privacy{display:none!important}.shell{max-width:none;padding:0!important;background:white}.section{display:none!important}#examenes{display:block!important}.card{box-shadow:none!important}.section-head{margin:0 0 14px}';if(!d.getElementById('gaia-embed-css')){s.id='gaia-embed-css';d.head.appendChild(s)}const height=d.documentElement.scrollHeight;frame.style.height=Math.max(1300,height+30)+'px';}catch(e){}};frame.addEventListener('load',run,{once:true});if(frame.contentDocument?.readyState==='complete')run();}
-let cm=10,cy=2026;const months=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-function calendar(){document.getElementById('calTitle').textContent=months[cm]+' de '+cy;const a=document.getElementById('cal');a.innerHTML='';['L','M','M','J','V','S','D'].forEach(x=>{let e=document.createElement('div');e.className='calday head';e.textContent=x;a.appendChild(e)});let first=(new Date(cy,cm,1).getDay()+6)%7;for(let i=0;i<first;i++){let e=document.createElement('div');a.appendChild(e)}for(let d=1;d<=new Date(cy,cm+1,0).getDate();d++){let e=document.createElement('div');e.className='calday';e.textContent=d;a.appendChild(e)}}
-document.getElementById('prev').onclick=()=>{cm--;if(cm<0){cm=11;cy--}calendar()};document.getElementById('next').onclick=()=>{cm++;if(cm>11){cm=0;cy++}calendar()};calendar();
+let cm=8,cy=2026;const months=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+const cycleFallback=[
+{id:'celo-2024-06',month:'2024-06',certainty:'reportado',note:'Celo reportado en junio de 2024; sin fechas exactas.'},
+{id:'celo-2024-10',month:'2024-10',certainty:'reportado',note:'Celo reportado en octubre de 2024; sin fechas exactas.'},
+{id:'celo-2025-04',month:'2025-04',certainty:'aproximado',note:'Posible celo en abril de 2025, pendiente de confirmación.'},
+{id:'celo-2026-03',month:'2026-03',certainty:'reportado',phase:'ultima_semana',note:'Durante marzo de 2026 estaba en su última semana de celo.'},
+{id:'celo-2026-09',month:'2026-09',certainty:'reportado',note:'Celo reportado en septiembre de 2026; sin fechas exactas.'}
+];
+let cycleRecords=cycleFallback;
+function cycleDateLabel(month){const [y,m]=String(month).split('-');return months[Number(m)-1]+' de '+y;}
+function drawCycleHistory(){
+ const target=document.getElementById('cycleHistory');if(!target)return;
+ target.innerHTML=[...cycleRecords].sort((a,b)=>b.month.localeCompare(a.month)).map(c=>{
+ const maybe=c.certainty==='aproximado';
+ return '<div class="cycle-row"><div class="cycle-icon">'+(maybe?'🌼':'🌸')+'</div><div><strong>'+cycleDateLabel(c.month)+'</strong><p>'+safe(c.note||'Mes registrado; sin fechas exactas')+'</p></div><span class="cycle-chip '+(maybe?'maybe':'')+'">'+(maybe?'Por confirmar':'Reportado')+'</span></div>';
+ }).join('');
+}
+function calendar(){
+ const key=cy+'-'+String(cm+1).padStart(2,'0'),record=cycleRecords.find(x=>x.month===key);
+ document.getElementById('calTitle').textContent=months[cm]+' de '+cy;
+ const notice=document.getElementById('cycleMonthNotice');
+ notice.textContent=record?(record.certainty==='aproximado'?'🌼 Posible celo registrado en este mes':'🌸 Celo registrado en este mes')+(record.phase==='ultima_semana'?' · Se recuerda su última semana':''):'Sin un episodio documentado para este mes';
+ notice.className='cycle-month-notice'+(record?' observed'+(record.certainty==='aproximado'?' tentative':''):'');
+ const a=document.getElementById('cal');a.innerHTML='';
+ ['L','M','M','J','V','S','D'].forEach(x=>{const e=document.createElement('div');e.className='calday head';e.textContent=x;a.appendChild(e)});
+ const first=(new Date(cy,cm,1).getDay()+6)%7;
+ for(let i=0;i<first;i++)a.appendChild(document.createElement('div'));
+ for(let d=1;d<=new Date(cy,cm+1,0).getDate();d++){const e=document.createElement('div');e.className='calday';e.textContent=d;a.appendChild(e)}
+}
+document.getElementById('prev').onclick=()=>{cm--;if(cm<0){cm=11;cy--}calendar()};
+document.getElementById('next').onclick=()=>{cm++;if(cm>11){cm=0;cy++}calendar()};
+calendar();drawCycleHistory();
 
 const GH_REPO='MorganEstampadosCol/Gaia';
 const GH_FILE='data/gaia.json';
@@ -165,6 +194,7 @@ if(!Array.isArray(d.symptoms))d.symptoms=[];
 if(!Array.isArray(d.cycles))d.cycles=[];
 cloudData={sha:f.sha,data:d};
 symptoms=d.symptoms;
+if(Array.isArray(d.cycles)&&d.cycles.length){cycleRecords=d.cycles;calendar();drawCycleHistory();}
 if(render)renderSymptoms();
 setStatus('✓ Datos consultados en GitHub · '+(ghToken?'Escritura autorizada':'Solo lectura'));
 return d;
