@@ -138,5 +138,18 @@
       "certainty": "reportado",
       "note": "Celo observado en septiembre de 2026; sin día exacto."
     }
+  ],
+  "deworming": [
+    {
+      "id": "gaia-nexgard-spectra-2026-08",
+      "month": "2026-08",
+      "date_precision": "month",
+      "product": "NexGard Spectra",
+      "manufacturer": "Boehringer Ingelheim",
+      "presentation": "Comprimido masticable para perros de 15 a 30 kg",
+      "quantity_reported": "1 tableta",
+      "type": "Antiparasitario interno y externo",
+      "notes": "Producto indicado por el cuidador como la desparasitación de agosto. Día exacto no informado. La imagen muestra la presentación comercial; no constan lote ni hora de administración."
+    }
   ]
 }
