@@ -14,12 +14,32 @@
 
 .record-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.seal{border:2px solid #d8e3da;border-radius:15px;background:#fff;padding:16px;box-shadow:0 4px 14px #23412c10}.seal .year{color:#55866e;font-weight:800;font-size:12px;letter-spacing:2px}.seal h3{font-size:25px;margin:8px 0}.sticker{border-radius:9px;overflow:hidden;margin:12px 0;box-shadow:0 6px 16px #334c4118;transform:rotate(-1deg);border:1px solid #dae0db}.sticker strong{display:block;color:white;background:#98613a;padding:9px}.sticker div{padding:10px;font-size:12px;line-height:1.8}.sticker.blue strong{background:#2f81ae}.sticker.gold strong{background:#a99a42}.sticker.teal strong{background:#378c98}
 .lab-table{width:100%;border-collapse:collapse;min-width:540px;font-size:13px}.lab-table th{background:#dbece0;text-align:left;color:#365d48}.lab-table td,.lab-table th{padding:10px;border-bottom:1px solid #e4eae4}.lab-table tr:nth-child(2n){background:#f7faf7}.lab-table .flag{font-weight:bold;color:#a55345}.lab-wrap{overflow-x:auto}.clinical-card{margin-bottom:18px}.clinical-card h3{font-size:23px}.med-advice{background:#fff2da;border-radius:15px;padding:15px;margin:15px 0;line-height:1.6}.subtle-note{font-size:12px;color:#7a887c}@media(max-width:900px){.record-grid{grid-template-columns:1fr}}
+
+/* GAIA · tema vinotinto */
+:root{--bg:#fff7f7;--paper:#fffdfb;--ink:#4e182f;--muted:#896977;--accent:#8e2b51;--sage:#f2dce6;--line:#f1dce5;--pink:#ffdfeb;--gold:#ffe3d1;--shadow:0 12px 36px #651f4115}
+body{background:radial-gradient(ellipse at top right,#ffe2ed 0,transparent 40%),#fff7f7;color:var(--ink)}
+.brand{color:#6c1d41}.brand span{color:#df8eb0}
+.hero{background:linear-gradient(120deg,#6c173f 0%,#9b375e 52%,#d77f99 100%);box-shadow:0 20px 50px #7d244323}
+.hero:after{content:"🐾  ♡  🐾";position:absolute;bottom:12px;right:24px;font-size:21px;letter-spacing:9px;opacity:.3}
+.hero .eyebrow,.hero h1,.hero p{color:#fff9f7}.hero .eyebrow{color:#ffdce8}.hero .btn{background:#fff0f3;color:#7a2347;border:none}
+.photo{background:#fff2ef;border-color:#ffe6ef;box-shadow:0 12px 36px #4a152c49}
+.nav button.active{background:#762341;color:white}.nav button{color:#79405a}
+.card{border-color:#f2e0e8;box-shadow:0 12px 30px #7133510e}
+.card.soft{background:#f6e3ed}.card.pink{background:#ffe2ec}.card.gold{background:#fff0e2}
+.pill{background:#f8e3ee;color:#82294c}
+.btn.primary{background:#8e2b51;border-color:#8e2b51}.btn:hover{filter:brightness(.95)}
+.entry{border-color:#f1dce6}.entry .date{color:#983d5e}
+.record-grid .seal{background:linear-gradient(155deg,#fffafa,#ffedf3);border-color:#efcadb}
+.sticker{box-shadow:0 5px 16px #7c2e4a1c}.sticker.teal strong{background:#8e2b51}.sticker.gold strong{background:#ae6382}.sticker.blue strong{background:#b84a75}
+.lab-table th{background:#f5dfe9;color:#682445}.lab-table tr:nth-child(even){background:#fff7fa}
+.med-advice{background:#fff0e9}.footer{color:#956779}
+@media(max-width:770px){.hero{padding:24px 18px}.nav{position:sticky;top:0;z-index:3;background:#fff7f7ed;border-radius:15px;backdrop-filter:blur(14px)}.hero:after{right:8px;bottom:8px;font-size:15px}.photo{border-width:6px}}
 </style>
 </head>
 <body>
 <div class="shell">
-<header class="top"><div><div class="brand">GAIA<span>✳</span></div><div class="tagline">Su pequeño universo</div></div><div class="actions"><button class="btn" id="exportBtn">↓ Respaldo</button><button class="btn" id="importBtn">↑ Restaurar</button><input type="file" id="importFile" accept="application/json,.json" hidden></div></header>
-<section class="hero"><div><div class="eyebrow">Un hogar para todos sus recuerdos</div><h1>Hola, soy <span id="heroName">Gaia</span> ♡</h1><p>Mis aventuras, mi salud y cada momento especial, todo guardado con amor en un solo lugar.</p><button class="btn primary" data-open="profile">✎ Editar mi perfil</button></div><div class="hero-photo"><div id="photoHolder" class="photo" aria-label="Fotografía de Gaia">🐶</div><label class="photo-edit" for="photoInput">Cambiar fotografía ✎</label><input type="file" id="photoInput" accept="image/*" hidden></div></section>
+<header class="top"><div><div class="brand">GAIA<span>🐾</span></div><div class="tagline">Su pequeño universo</div></div><div class="actions"><button class="btn" id="exportBtn">↓ Respaldo</button><button class="btn" id="importBtn">↑ Restaurar</button><input type="file" id="importFile" accept="application/json,.json" hidden></div></header>
+<section class="hero"><div><div class="eyebrow">Mi mundo de huellitas</div><h1>Hola, soy <span id="heroName">Gaia</span> ♡</h1><p>Una vida llena de amor, huellitas y recuerdos. Mi salud y mis aventuras, cuidadas con cariño.</p><button class="btn primary" data-open="profile">✎ Editar mi perfil</button></div><div class="hero-photo"><div id="photoHolder" class="photo" aria-label="Fotografía de Gaia">🐶</div><label class="photo-edit" for="photoInput">Cambiar fotografía ✎</label><input type="file" id="photoInput" accept="image/*" hidden></div></section>
 <nav class="nav" aria-label="Secciones de GAIA"><button class="active" data-tab="inicio">⌂ Inicio</button><button data-tab="perfil">♡ Mi perfil</button><button data-tab="vacunas">✚ Vacunas</button><button data-tab="peso">⚖ Peso</button><button data-tab="salud">▤ Historial médico</button><button data-tab="examenes">⌁ Laboratorios 2023</button><button data-tab="celo">❀ Ciclo y celo</button><button data-tab="agenda">◷ Agenda</button></nav>
 <main>
 <section id="inicio" class="section active"><div class="grid">
