@@ -79,10 +79,11 @@
   "medical_history": [
     {
       "date": "2023-03-25",
-      "title": "Consulta y análisis clínicos",
+      "title": "Consulta por vómitos de alimento sin digerir y exámenes clínicos",
       "clinic": "Dogtor Pets",
       "clinical_record": "4177",
-      "notes": "Hemograma, bioquímica clínica y fórmula médica; interpretación transcrita del informe: anemia hipercrómica normocítica e hipoproteinemia. Ver tablas en la aplicación."
+      "notes": "Gaia fue llevada a consulta porque vomitaba la comida y parecía no digerirla. En la Clínica Dogtor Pets se realizaron hemograma, bioquímica clínica y se expidió fórmula médica. El informe registró la interpretación textual «anemia hipercrómica normocítica, hipoproteinemia» (requiere valoración veterinaria ante discrepancias con algunos valores). No se atribuye una causa definitiva a los vómitos. Ver tablas del 25/03/2023 en la aplicación.",
+      "reason": "Vómitos de comida aparentemente sin digerir, según relato de su cuidador."
     },
     {
       "date": "2023",
@@ -90,6 +91,15 @@
       "notes": "Lesión leve jugando y episodios de protrusión del tercer párpado que se reduce espontáneamente, descritos como ojo de cereza. Sin tratamiento documentado."
     }
   ],
-  "symptoms": [],
+  "symptoms": [
+    {
+      "id": "gaia-vomitos-2023",
+      "fecha": "2023-03-25",
+      "titulo": "Vómitos de alimento sin digerir",
+      "estado": "Consulta veterinaria",
+      "detalle": "Gaia vomitaba su comida y parecía no digerirla. Se acudió a Dogtor Pets el 25/03/2023; se realizaron hemograma y bioquímica clínica y se formuló tratamiento. No consta en los documentos una causa confirmada ni la fecha exacta de resolución.",
+      "historico": true
+    }
+  ],
   "cycles": []
 }
